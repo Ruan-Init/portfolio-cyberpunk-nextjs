@@ -2,7 +2,7 @@
 
 import { useRef, useMemo } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Fog, Float, Stars, Cloud } from '@react-three/drei'
+import { Float, Stars, Cloud } from '@react-three/drei'
 import * as THREE from 'three'
 import Building from './Building'
 
