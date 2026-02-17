@@ -2,7 +2,7 @@
 
 import { useRef, useMemo } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import { Float, Stars, Cloud } from "@react-three/drei";
+import { Float, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import Building from "./Building";
 
@@ -449,24 +449,6 @@ export default function CityScene() {
 
       {/* Particles */}
       <Particles count={300} />
-
-      {/* Volumetric-ish clouds (low, foggy) */}
-      <Cloud
-        position={[-20, 18, -30]}
-        opacity={0.08}
-        speed={0.2}
-        width={30}
-        depth={5}
-        segments={8}
-      />
-      <Cloud
-        position={[20, 22, -35]}
-        opacity={0.06}
-        speed={0.15}
-        width={25}
-        depth={4}
-        segments={6}
-      />
     </>
   );
 }
