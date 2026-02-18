@@ -74,10 +74,10 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      style={{ 
-        position: "relative", 
-        zIndex: 10, 
-        padding: "60px 16px 60px 16px" 
+      style={{
+        position: "relative",
+        zIndex: 10,
+        padding: "60px 16px 60px 16px",
       }}
       className="sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-24"
     >
@@ -122,10 +122,7 @@ export default function Experience() {
       </div>
 
       {/* Timeline */}
-      <div 
-        style={{ position: "relative" }}
-        className="md:pl-16 lg:pl-20"
-      >
+      <div style={{ position: "relative" }} className="md:pl-16 lg:pl-20">
         {/* Timeline line - hidden on mobile */}
         <div
           className="hidden md:block"
