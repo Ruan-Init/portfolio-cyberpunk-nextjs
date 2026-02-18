@@ -66,9 +66,9 @@ src/
 
 ### Trocar nome e dados
 - **`src/components/sections/Hero.tsx`** — nome, subtítulo, stats
-- **`src/components/sections/About.tsx`** — texto sobre você, iniciais do avatar
+- **`src/components/sections/About.tsx`** — texto sobre mim, iniciais do avatar
 - **`src/components/sections/Skills.tsx`** — skills e percentuais
-- **`src/components/sections/Projects.tsx`** — seus projetos reais
+- **`src/components/sections/Projects.tsx`** — meus projetos reais
 - **`src/components/sections/Experience.tsx`** — experiências profissionais
 - **`src/components/sections/Contact.tsx`** — e-mail e links
 
