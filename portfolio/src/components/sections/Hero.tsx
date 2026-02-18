@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-16"
+      className="relative z-10 min-h-screen flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-20 md:py-0"
     >
       <div ref={ref as any} className="transition-transform duration-100">
         {/* Label */}
@@ -63,7 +63,7 @@ export default function Hero() {
         </h1>
 
         {/* Sub */}
-        <p className="text-[1.15rem] text-[color:var(--text-dim)] max-w-[560px] leading-[1.7] font-light tracking-wide animate-fadeUp">
+        <p className="text-sm sm:text-base md:text-lg lg:text-[1.15rem] text-[color:var(--text-dim)] max-w-[560px] leading-[1.6] sm:leading-[1.7] font-light tracking-wide animate-fadeUp">
           {t("4 anos", "4 years") === "4 anos" ? (
             <>
               <strong style={{ color: "#00f5ff", fontWeight: 600 }}>
@@ -91,11 +91,11 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="mt-12 flex gap-5 animate-fadeUp">
+        <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-5 animate-fadeUp">
           <a
             href="#projects"
             data-hover
-            className="inline-block px-9 py-3 bg-[#00f5ff] text-[#050810] font-orbitron text-[0.72rem] font-extrabold tracking-wider uppercase"
+            className="w-full sm:w-auto inline-block px-6 sm:px-9 py-2 sm:py-3 bg-[#00f5ff] text-[#050810] font-orbitron text-xs sm:text-[0.72rem] font-extrabold tracking-wider uppercase text-center"
             style={{
               clipPath:
                 "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px))",
@@ -114,7 +114,7 @@ export default function Hero() {
           <a
             href="#contact"
             data-hover
-            className="inline-block px-9 py-3 border border-[#00f5ff] text-[#00f5ff] font-orbitron text-[0.72rem] font-extrabold tracking-wider uppercase"
+            className="w-full sm:w-auto inline-block px-6 sm:px-9 py-2 sm:py-3 border border-[#00f5ff] text-[#00f5ff] font-orbitron text-xs sm:text-[0.72rem] font-extrabold tracking-wider uppercase text-center"
             style={{
               clipPath:
                 "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px))",
@@ -134,7 +134,7 @@ export default function Hero() {
       </div>
 
       {/* Stats */}
-      <div className="absolute right-6 bottom-20 flex flex-col gap-6 animate-fadeUp">
+      <div className="hidden md:flex absolute right-6 lg:right-16 bottom-16 md:bottom-20 flex-col gap-4 md:gap-6 animate-fadeUp">
         {[
           { n: "12+", l: t("Projetos", "Projects") },
           { n: "4Y", l: t("Experiência", "Experience") },
@@ -143,12 +143,12 @@ export default function Hero() {
           <div key={s.n} style={{ textAlign: "right" }}>
             <div className="text-right">
               <div
-                className="text-[2.5rem] font-extrabold text-[#00f5ff] leading-none"
+                className="text-lg sm:text-xl md:text-[2.5rem] font-extrabold text-[#00f5ff] leading-none"
                 style={{ textShadow: "0 0 20px #00f5ff" }}
               >
                 {s.n}
               </div>
-              <div className="text-[0.6rem] text-[color:var(--text-dim)] tracking-widest uppercase">
+              <div className="text-[0.5rem] sm:text-[0.6rem] text-[color:var(--text-dim)] tracking-widest uppercase">
                 {s.l}
               </div>
             </div>

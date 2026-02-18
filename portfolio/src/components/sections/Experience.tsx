@@ -74,7 +74,12 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      style={{ position: "relative", zIndex: 10, padding: "120px 60px 80px" }}
+      style={{ 
+        position: "relative", 
+        zIndex: 10, 
+        padding: "60px 16px 60px 16px" 
+      }}
+      className="sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-24"
     >
       <div style={{ marginBottom: 70 }}>
         <div
@@ -117,9 +122,13 @@ export default function Experience() {
       </div>
 
       {/* Timeline */}
-      <div style={{ position: "relative", paddingLeft: 60 }}>
-        {/* Line */}
+      <div 
+        style={{ position: "relative" }}
+        className="md:pl-16 lg:pl-20"
+      >
+        {/* Timeline line - hidden on mobile */}
         <div
+          className="hidden md:block"
           style={{
             position: "absolute",
             left: 0,
@@ -142,8 +151,9 @@ export default function Experience() {
               transition: `opacity 0.7s ease ${i * 0.2}s, transform 0.7s ease ${i * 0.2}s`,
             }}
           >
-            {/* Diamond node */}
+            {/* Diamond node - hidden on mobile */}
             <div
+              className="hidden md:block"
               style={{
                 position: "absolute",
                 left: -64,
@@ -160,12 +170,13 @@ export default function Experience() {
             <div
               style={{
                 fontFamily: "Share Tech Mono, monospace",
-                fontSize: "0.62rem",
+                fontSize: "0.55rem",
                 color: "#ff006e",
                 letterSpacing: 3,
                 textTransform: "uppercase",
                 marginBottom: 8,
               }}
+              className="sm:text-[0.62rem]"
             >
               {t(exp.date.pt, exp.date.en)}
             </div>
@@ -173,29 +184,30 @@ export default function Experience() {
             <div
               style={{
                 fontFamily: "Orbitron, monospace",
-                fontSize: "1.05rem",
                 fontWeight: 700,
                 color: "#fff",
                 marginBottom: 4,
               }}
+              className="text-sm sm:text-base md:text-[1.05rem]"
             >
               {t(exp.role.pt, exp.role.en)}
             </div>
 
             <div
-              style={{ fontSize: "1rem", color: "#00f5ff", marginBottom: 14 }}
+              style={{ color: "#00f5ff", marginBottom: 14 }}
+              className="text-sm sm:text-base md:text-[1rem]"
             >
               {exp.company}
             </div>
 
             <p
               style={{
-                fontSize: "0.92rem",
                 color: "var(--text-dim)",
-                lineHeight: 1.7,
+                lineHeight: 1.6,
                 fontWeight: 300,
                 maxWidth: 580,
               }}
+              className="text-xs sm:text-sm md:text-[0.92rem]"
             >
               {t(exp.desc.pt, exp.desc.en)}
             </p>
@@ -213,12 +225,12 @@ export default function Experience() {
                   key={tech}
                   style={{
                     fontFamily: "Share Tech Mono, monospace",
-                    fontSize: "0.58rem",
                     color: "var(--text-dim)",
                     border: "1px solid rgba(255,255,255,0.08)",
-                    padding: "3px 8px",
-                    letterSpacing: 2,
+                    padding: "2px 6px",
+                    letterSpacing: 1,
                   }}
+                  className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.58rem]"
                 >
                   {tech}
                 </span>

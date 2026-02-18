@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-[100]"
       style={{
-        padding: "20px 0",
+        padding: "12px 0",
         transition: "all 0.3s",
         background: scrolled
           ? "rgba(5,8,16,0.95)"
@@ -34,15 +34,15 @@ export default function Navbar() {
         borderBottom: scrolled ? "1px solid rgba(0,245,255,0.08)" : "none",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 flex items-center justify-between">
         {/* Logo */}
         <div
           style={{
             fontFamily: "Orbitron, monospace",
             fontWeight: 900,
-            letterSpacing: 4,
+            letterSpacing: 3,
           }}
-          className="text-[#00f5ff] text-lg"
+          className="text-[#00f5ff] text-sm sm:text-base md:text-lg"
         >
           DEV<span className="text-[#ff006e]">_</span>PORT
         </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
               key={l}
               data-hover
               onClick={() => setLang(l)}
-              className={`px-3 py-1 text-[0.68rem] ${lang === l ? "bg-[#00f5ff] text-[#050810] font-bold" : "text-[color:var(--text-dim)]"}`}
+              className={`px-2 sm:px-3 py-1 text-[0.6rem] sm:text-[0.68rem] md:text-[0.72rem] ${lang === l ? "bg-[#00f5ff] text-[#050810] font-bold" : "text-[color:var(--text-dim)]"}`}
               style={{ fontFamily: "Share Tech Mono, monospace" }}
             >
               {l.toUpperCase()}
