@@ -63,7 +63,10 @@ export default function Hero() {
         </h1>
 
         {/* Sub */}
-        <p className="text-sm sm:text-base md:text-lg lg:text-[1.15rem] text-[#d0d0d0] max-w-[560px] leading-[1.8] sm:leading-[1.8] md:leading-[1.9] font-normal tracking-wide animate-fadeUp" style={{ letterSpacing: "0.3px" }}>
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-[1.15rem] text-[#d0d0d0] max-w-[560px] leading-[1.8] sm:leading-[1.8] md:leading-[1.9] font-normal tracking-wide animate-fadeUp"
+          style={{ letterSpacing: "0.3px" }}
+        >
           {t("4 anos", "4 years") === "4 anos" ? (
             <>
               <strong style={{ color: "#00f5ff", fontWeight: 600 }}>
