@@ -60,7 +60,8 @@ export default function About() {
         ].map((text, i) => (
           <p
             key={i}
-            className="text-[1.05rem] leading-7 text-[color:var(--text)] mb-5 font-light"
+            className="text-base sm:text-lg md:text-[1.05rem] leading-[1.8] md:leading-[1.9] text-[#e0e0e0] mb-6 font-normal"
+            style={{ letterSpacing: "0.3px" }}
           >
             {text}
           </p>

@@ -80,11 +80,12 @@ export default function Contact() {
 
         <p
           style={{
-            fontSize: "0.98rem",
-            color: "var(--text-dim)",
+            fontSize: "1rem",
+            color: "#d0d0d0",
             lineHeight: 1.8,
-            fontWeight: 300,
+            fontWeight: 400,
             marginBottom: 36,
+            letterSpacing: "0.3px",
           }}
         >
           {t(

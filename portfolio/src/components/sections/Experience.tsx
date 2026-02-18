@@ -199,12 +199,13 @@ export default function Experience() {
 
             <p
               style={{
-                color: "var(--text-dim)",
-                lineHeight: 1.6,
-                fontWeight: 300,
+                color: "#ccc",
+                lineHeight: 1.8,
+                fontWeight: 400,
                 maxWidth: 580,
+                letterSpacing: "0.3px",
               }}
-              className="text-xs sm:text-sm md:text-[0.92rem]"
+              className="text-xs sm:text-sm md:text-[0.95rem]"
             >
               {t(exp.desc.pt, exp.desc.en)}
             </p>

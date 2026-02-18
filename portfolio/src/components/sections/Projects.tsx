@@ -75,7 +75,7 @@ function ProjectCard({ p, index, visible }: { p: typeof projects[0]; index: numb
       <div style={{ padding: 26 }}>
         <div style={{ fontFamily: 'Share Tech Mono, monospace', fontSize: '0.62rem', color: 'var(--text-dim)', letterSpacing: 3, marginBottom: 8 }}>// {p.num}</div>
         <div style={{ fontFamily: 'Orbitron, monospace', fontSize: '0.95rem', fontWeight: 700, color: '#fff', marginBottom: 12 }}>{p.title}</div>
-        <p style={{ fontSize: '0.88rem', color: 'var(--text-dim)', lineHeight: 1.6, marginBottom: 18, fontWeight: 300 }}>
+        <p style={{ fontSize: '0.92rem', color: '#d0d0d0', lineHeight: 1.7, marginBottom: 18, fontWeight: 400, letterSpacing: '0.2px' }}>
           {t(p.pt, p.en)}
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 18 }}>
